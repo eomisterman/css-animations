@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="eye-container left">
+      <div class="background">
+        <div class="eye"></div>
+        <div class="pupil"></div>
+      </div>
+    </div>
+    <div class="eye-container right">
+      <div class="background">
+        <div class="eye"></div>
+        <div class="pupil"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.eye-container {
+  height: 120px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.right {
+  justify-content: flex-start;
+}
+
+.background {
+  background: black;
+  position: relative;
+  height: 100px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.eye {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 6%;
+  right: 0;
+  margin: auto;
+  height: 90px;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+}
+
+.pupil {
+  position: absolute;
+  top: 0;
+  bottom: 20%;
+  left: 40%;
+  right: 0;
+  margin: auto;
+  height: 40px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+}
+</style>
+</html>
